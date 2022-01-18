@@ -1,8 +1,8 @@
-let arraySpinners = '|/-\\|';
+let spinners = '|/-\\|';
 let timer = 0;
 
-for (let spinners of arraySpinners) {
+for (let spinner of spinners) {
   setTimeout(() => {
-    process.stdout.write(`\r${spinners}`)
+    process.stdout.write(`\r${spinner}`)
   }, timer += 200);
 };
